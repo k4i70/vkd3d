@@ -938,7 +938,7 @@ struct d3d12_command_list
     VkPipeline current_pipeline;
     VkRenderPass pso_render_pass;
     VkRenderPass current_render_pass;
-    struct vkd3d_pipeline_bindings pipeline_bindings[VK_PIPELINE_BIND_POINT_RANGE_SIZE];
+    struct vkd3d_pipeline_bindings pipeline_bindings[VK_PIPELINE_BIND_POINT_MAX_ENUM];
 
     struct d3d12_pipeline_state *state;
 
